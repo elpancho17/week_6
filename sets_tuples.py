@@ -94,48 +94,48 @@
 
 
 #######################tuples challenge#####################
-# Challenge: Count the number of occurrences of the character 'v' in the text below.
-# The text is converted to a tuple of characters and the target characters are 'v' and 'V'.
-# The result is output to the console.
-#queue the videos(2)
-text = """Voilà! In view, a humble vaudevillian veteran, cast vicariously as both victim and villain by the vicissitudes of Fate.
-This visage, no mere veneer of vanity, is a vestige of the vox populi, now vacant, vanished. However, this valorous visitation
-of a by-gone vexation stands vivified, and has vowed to vanquish these venal and virulent vermin vanguarding vice and
-vouchsafing the violently vicious and voracious violation of volition.
+# # Challenge: Count the number of occurrences of the character 'v' in the text below.
+# # The text is converted to a tuple of characters and the target characters are 'v' and 'V'.
+# # The result is output to the console.
+# #queue the videos(2)
+# text = """Voilà! In view, a humble vaudevillian veteran, cast vicariously as both victim and villain by the vicissitudes of Fate.
+# This visage, no mere veneer of vanity, is a vestige of the vox populi, now vacant, vanished. However, this valorous visitation
+# of a by-gone vexation stands vivified, and has vowed to vanquish these venal and virulent vermin vanguarding vice and
+# vouchsafing the violently vicious and voracious violation of volition.
 
 
-The only verdict is vengeance; a vendetta, held as a votive, not in vain, for the value and veracity of such shall one day
-vindicate the vigilant and the virtuous.
+# The only verdict is vengeance; a vendetta, held as a votive, not in vain, for the value and veracity of such shall one day
+# vindicate the vigilant and the virtuous.
 
 
-Verily, this vichyssoise of verbiage veers most verbose, so let me simply add that it is my very good honor to meet you
-and you may call me V."""
+# Verily, this vichyssoise of verbiage veers most verbose, so let me simply add that it is my very good honor to meet you
+# and you may call me V."""
 
 
-# Convert the text to a tuple of characters
-text_tuple= tuple(text)
-print(text_tuple)
-
-
-
-
-# Tuple to store the target characters
-
-small_v= print(text_tuple.count("V"))
-big_v= print(text_tuple.count("v"))
+# # Convert the text to a tuple of characters
+# text_tuple= tuple(text)
+# print(text_tuple)
 
 
 
 
+# # Tuple to store the target characters
 
-# Count occurrences of 'v' or 'V' by filtering the text_tuple
+# small_v= print(text_tuple.count("V"))
+# big_v= print(text_tuple.count("v"))
 
-total= small_v + big_v
 
 
-# Output the result
 
-print(total)
+
+# # Count occurrences of 'v' or 'V' by filtering the text_tuple
+
+# total= small_v + big_v
+
+
+# # Output the result
+
+# print(total)
 
 
 # dictionarys Accessing a Value from a Nested List###############################
@@ -148,11 +148,14 @@ sample_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(len(sample_list)) # Output: 3
 #this is called a nested list
 # Extract and print the second element from the first list
-
+print(sample_list[0][1])
+print(sample_list[1][2])
+print(sample_list[2][0])
 
 sample_list_of_fruit = {"fruits": ["apple", "banana", "cherry"]}
 # Extract and print the second fruit from the list
-
+print(sample_list_of_fruit["fruits"][1])
+print(sample_list_of_fruit['fruits'][2])
 
 sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 # Extract and print the third element from the second list
@@ -162,6 +165,8 @@ sample_list_of_lists = {"lists": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]}
 
 sample_list_of_dicts = {"dicts": [{"name": "Alice", "age": 25}, {"name": "Bob", "age": 30}, {"name": "Charlie", "age": 35}]}
 # Extract and print the age of the second person
+print(sample_list_of_lists["dicts"][1]["age"])
+print(sample_list_of_lists["dicts"][2]["name"])
 
 
 
